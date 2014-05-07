@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 01.05.2014 20:37:46 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <joined-subclass name="stamm.Patient" extends="stamm.Person" table="PATIENT" lazy="false">
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="patNum" type="int">
+            <column name="PATNR" />
+        </property>
+        <property name="insurance" type="int">
+            <column name="INSURANCE" />
+        </property>
+        <property name="insRequired" type="boolean">
+            <column name="Z_BEFREIT" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
