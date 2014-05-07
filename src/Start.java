@@ -56,6 +56,7 @@ public class Start extends JPanel implements ActionListener, ChangeListener {
 	private JButton btnSingleMonth = new JButton("");
 	private JButton btnMultiMonth = new JButton("");
 	private JButton btnTrip = new JButton("");
+	private JButton btnClear = new JButton("Clr");
 	
 	private int myTaxi; 
 	

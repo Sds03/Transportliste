@@ -2,7 +2,7 @@ package stamm;
 
 import java.util.Date;
 
-public class Patient {
+public class Patient  {
 
 	private int id;
 	private String lastName;

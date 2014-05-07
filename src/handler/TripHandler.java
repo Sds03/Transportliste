@@ -125,6 +125,7 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 	private JButton btnPatRollRight = new JButton(">>");
 	private JButton btnPatRollLeft = new JButton("<<");
 	private JButton btnAddTour = new JButton("Add Tour");
+	private JButton btnClear = new JButton("Clear");
 
 	// labels
 	private JLabel lblTitle = new JLabel("                Trip  Management");
@@ -289,7 +290,7 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 	@Override
 	public void valueChanged(ListSelectionEvent e) {
 		//
-		  try {
+		try {
 			this.tour = tourList.get(tourTable.getSelectedRow());
 			tripList = DAOTrip.getTripsbyTourId(tour.getTourNr());
 			if (tripList.size() > 0) {
@@ -298,9 +299,9 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 				pnlTour.revalidate();
 				pnlTour.repaint();
 			}
-		  }
-		  catch (Exception ex) {}
+		} catch (Exception ex) {
 		}
+	}
 
 	// listener for birthday text field
 	public void stateChanged(ChangeEvent e) {
@@ -351,12 +352,14 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 			return false;
 	}
 
-	public void loadTaxis(){
-		
-	taxiList = DAOTaxi.getAllDataElements("Taxi");	
-	for (int i=0; i<taxiList.size();i++) taxiNames[i] = taxiList.get(i).getName();
+	public void loadTaxis() {
+
+		taxiList = DAOTaxi.getAllDataElements("Taxi");
+		taxiNames = new Object[taxiList.size()];
+		for (int i = 0; i < taxiList.size(); i++)
+			taxiNames[i] = taxiList.get(i).getName();
 	}
-	
+
 	public boolean loadTours() {
 		boolean result = false;
 		tourList = DAOTour.getTour(date);
@@ -364,7 +367,9 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 		if (tourList.size() > 0) {
 			tourtabledata = new Object[tourList.size()][5];
 			for (int i = 0; i < tourList.size(); i++) {
-				tourtabledata[i][0] = DAOTaxi.getTaxiFromNr(tourList.get(i).getTaxiNr()).get(0).getName();
+				tourtabledata[i][0] = DAOTaxi
+						.getTaxiFromNr(tourList.get(i).getTaxiNr()).get(0)
+						.getName();
 				tourtabledata[i][1] = DAODriver.getDriver(
 						tourList.get(i).getDriver()).getLastname();
 				tourtabledata[i][2] = tourList.get(i).getTourArea();
@@ -430,8 +435,8 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 
 	public void addTour(Driver driver, String area, Object taxi) {
 		List<Tour> tourlst = DAOTour.getTour(date);
-		DAOTour.addTour(((Taxi) taxi).getId(), driver.getId(), date, tourlst.size(),
-				area);
+		DAOTour.addTour(((Taxi) taxi).getId(), driver.getId(), date,
+				tourlst.size(), area);
 		loadTours();
 	}
 
@@ -450,7 +455,8 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 
 				// here insert plausibility check and insert tour function
 				addTour(driverList.get(cbDriver.getSelectedIndex()),
-						(String) cbArea.getSelectedItem(),cbTaxi.getSelectedItem());
+						(String) cbArea.getSelectedItem(),
+						cbTaxi.getSelectedItem());
 				dialog.setVisible(false);
 			}
 		};
@@ -513,6 +519,11 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 		btnPatToTrip.addActionListener(this);
 		btnPatSearch.addActionListener(this);
 		btnAddTour.addActionListener(this);
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				clearPatientFields();
+			}
+		});
 		btnPatRollLeft.addActionListener(this);
 		jcalendar.addPropertyChangeListener(this);
 		tfPatientSearch.addKeyListener(this);
@@ -567,23 +578,23 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 		tfPatientFon.setBounds(85, 208, 180, 20);
 
 		// control buttons
-		btnSaveGuest.setBounds(115, 258, 77, 23);
-		btnLoadGuest.setBounds(202, 258, 97, 23);
+		btnSaveGuest.setBounds(245, 258, 77, 23);
+		btnLoadGuest.setBounds(33, 258, 85, 23);
 		btnPatToTrip.setSize(85, 23);
 
-		btnPatToTrip.setLocation(20, 257);
+		btnPatToTrip.setLocation(551, 258);
 		btnPatSearch.setBounds(245, 14, 25, 14);
 		btnPatRollRight.setSize(50, 22);
 		btnPatRollRight.setLocation(235, 232);
 		btnPatRollRight.addActionListener(this);
 		btnPatRollLeft.setSize(50, 22);
 		btnPatRollLeft.setLocation(85, 232);
-
+		btnClear.setBounds(142, 258, 80, 22);
 		// add icons to buttons
 		btnPatSearch.setIcon(new ImageIcon(
 				"f:/workspace/transportliste/img/search-icon.png"));
 
-		btnAddTour.setBounds(304, 258, 97, 23);
+		btnAddTour.setBounds(444, 258, 97, 23);
 		jcalendar.setBounds(436, 28, 200, 200);
 
 		// set panel = FlowLayout
@@ -671,6 +682,7 @@ public class TripHandler extends JPanel implements ActionListener, KeyListener,
 		dataMatrix.add(btnAddTour);
 		dataMatrix.add(btnPatRollRight);
 		dataMatrix.add(btnPatRollLeft);
+		dataMatrix.add(btnClear);
 		lblPatinQueue.setSize(80, 22);
 		lblPatinQueue.setLocation(180, 232);
 		dataMatrix.add(lblPatinQueue);
