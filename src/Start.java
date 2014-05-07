@@ -4,7 +4,6 @@ import handler.TaxiHandler;
 import handler.TripHandler;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -12,6 +11,10 @@ import java.awt.GridLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.util.Date;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -19,13 +22,13 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
-
-import chrriis.dj.nativeswing.swtimpl.NativeInterface;
+import javax.swing.table.DefaultTableModel;
 
 import caltools.BCalendar;
 import caltools.MyCalendar;
@@ -41,18 +44,14 @@ public class Start extends JPanel implements ActionListener, ChangeListener {
 
 	private JFrame frame = new JFrame("Taxi Transport");
 	private Container contentPane = frame.getContentPane();
-	
 	private JMenu menu = new JMenu("Drivers ");
 	private JMenu menudtable = new JMenu("Data Tables");
-	
+	private JMenuBar outerBar = new JMenuBar();
 	private JMenuItem mItem = new JMenuItem("Driver Timesheet");
 	private JMenuItem mItemdt = new JMenuItem("Insurance");
 	private JMenuItem mItemdrv = new JMenuItem("Driver");
-	
 	private JMenuBar innerBarIcons = new JMenuBar();
 	private JMenuBar innerBar = new JMenuBar();
-	private JMenuBar outerBar = new JMenuBar();
-	
 	private JButton btnWagen = new JButton("");
 	private JButton btnSingleMonth = new JButton("");
 	private JButton btnMultiMonth = new JButton("");
@@ -109,7 +108,7 @@ public class Start extends JPanel implements ActionListener, ChangeListener {
 		} else if (e.getSource() == btnTrip) {
 			this.contentPane.removeAll();
 			this.trip.showGUI();
-			this.contentPane.add(trip.wrapper);
+			this.contentPane.add(trip.panel);
 		}
 
 		this.contentPane.repaint();
@@ -182,9 +181,8 @@ public class Start extends JPanel implements ActionListener, ChangeListener {
 		// other standard stuff
 		this.outerBar.add(this.innerBarIcons);
 		this.frame.setJMenuBar(this.outerBar);
-		this.contentPane.add(this.trip.wrapper);
+		this.contentPane.add(this.trip.panel);
 		this.frame.setContentPane(contentPane);
-		contentPane.setBackground(Color.yellow);
 		this.frame.setVisible(true);
 		this.cal.setInitialized(true);
 		// this.cal.setDrivers(drivers);
@@ -200,8 +198,6 @@ public class Start extends JPanel implements ActionListener, ChangeListener {
 	}
 
 	public static void main(String[] args) {
-		
-		
 		// Schedule a job for the event-dispatching thread:
 		// creating and showing this application's GUI.
 		try {
@@ -217,16 +213,14 @@ public class Start extends JPanel implements ActionListener, ChangeListener {
 		} catch (IllegalAccessException e) {
 			// handle exception
 		}
-// start the native interface
-		 NativeInterface.open();
-		
+
+		new Start(); // Create and show the GUI.
 
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				new Start(); // Create and show the GUI.
+
 			}
 		});
-		 NativeInterface.runEventPump();   
 	}
 
 	@Override

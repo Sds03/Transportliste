@@ -8,7 +8,7 @@ public class Trip {
 	private int authorization;
 	private boolean deductible;
 	private float deductAmount;
-	private Person p;
+	private Patient p;
 	private int doctorNr;
 	private float distance;
 	private String startCity;
@@ -22,7 +22,7 @@ public class Trip {
 		
 	}
 	
-	public Trip(Person pat){
+	public Trip(Patient pat){
 		this.p = pat;
 	}
 	
@@ -66,11 +66,11 @@ public class Trip {
 		this.deductAmount = deductAmount;
 	}
 	
-	public Person getP() {
+	public Patient getP() {
 		return p;
 	}
 
-	public void setP(Person p) {
+	public void setP(Patient p) {
 		this.p = p;
 	}
 

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31.03.2014 20:00:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="stamm.Trip" table="TRIP">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="taxiNr" type="int">
+            <column name="TAXINR" />
+        </property>
+        <property name="pickupTIme" type="java.util.Date">
+            <column name="PICKUPTIME" />
+        </property>
+        <property name="authorization" type="int">
+            <column name="AUTHORIZATION" />
+        </property>
+        <property name="deductible" type="boolean">
+            <column name="DEDUCTIBLE" />
+        </property>
+        <property name="deductAmount" type="float">
+            <column name="DEDUCTAMOUNT" />
+        </property>
+        <property name="guestNr" type="int">
+            <column name="GUESTNR" />
+        </property>
+        <property name="doctorNr" type="int">
+            <column name="DOCTORNR" />
+        </property>
+        <property name="distance" type="float">
+            <column name="DISTANCE" />
+        </property>
+        <property name="startCity" type="java.lang.String">
+            <column name="STARTCITY" />
+        </property>
+        <property name="endCity" type="java.lang.String">
+            <column name="ENDCITY" />
+        </property>
+        <property name="tripType" type="int">
+            <column name="TRIPTYPE" />
+        </property>
+        <property name="insuranceCo" type="int">
+            <column name="INSURANCECO" />
+        </property>
+        <property name="tourNr" type="int">
+            <column name="TOURNR" />
+        </property>
+    </class>
+</hibernate-mapping>

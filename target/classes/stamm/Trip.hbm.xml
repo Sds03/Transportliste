@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31.03.2014 20:00:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="stamm.Trip" table="TRIP">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="p" class="stamm.Patient" column="PATNR" not-null="true" unique="true"></many-to-one>
+         <property name="tourNr" type="int">
+            <column name="TOUR" />
+        </property>
+        <property name="pickUpTIme" type="java.util.Date">
+            <column name="PICKUP" />
+        </property>
+        <property name="opdate" type="java.util.Date">
+            <column name="OPDATUM" />
+        </property>
+        <property name="startCity" type="java.lang.String">
+            <column name="START" />
+        </property>
+        <property name="endCity" type="java.lang.String">
+            <column name="END" />
+        </property>
+               
+      </class>
+</hibernate-mapping>
