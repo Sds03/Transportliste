@@ -133,7 +133,7 @@
 						<mainClass>Start</mainClass>
 					</jnlp>
 					<sign>
-						<keystore>f:/workspace/transportliste/transportliste.jks</keystore>
+						<keystore>file:/f:/workspace/transportliste/transportliste.jks</keystore>
 						<keypass>akrd1234</keypass>
 						<storepass>akrd1234</storepass>
 						<storetype>jks</storetype>
