@@ -1,0 +1,155 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>TransportApp</groupId>
+	<artifactId>TransportApp</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<repositories>
+		<repository>
+			<id>atomation-repository</id>
+			<name>atomation maven repository</name>
+			<url>http://atomation-repository.googlecode.com/svn/trunk</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+	<profiles>
+		<profile>
+			<id>windows</id>
+			<dependencies>
+				<dependency>
+					<groupId>ru.atomation.native</groupId>
+					<artifactId>xulrunner-windows</artifactId>
+					<version>1.9</version>
+				</dependency>
+			</dependencies>
+		</profile>
+
+	</profiles>
+	<dependencies>
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.9.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.22</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jdatepicker</groupId>
+			<artifactId>jdatepicker</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>ru.atomation.jbrowser</groupId>
+			<artifactId>jbrowser</artifactId>
+			<version>1.9</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.3.2.GA</version>
+		</dependency>
+	
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+		
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>webstart-maven-plugin</artifactId>
+				<version>1.0-beta-6</version>
+				<!-- do not bind to install phase <executions> <execution> <goals> <goal>report</goal> 
+					</goals> </execution> </executions> -->
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>jnlp-inline</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+				
+					<jnlp>
+						<outputFile>launch.jnlp</outputFile>
+						<mainClass>Start</mainClass>
+					</jnlp>
+					<sign>
+						<keystore>/workspace/transportliste/transportliste.jks</keystore>
+						<keypass>akrd1234</keypass>
+						<storepass>akrd1234</storepass>
+						<storetype>jks</storetype>
+						<alias>servercert</alias>
+						<verify>true</verify>
+					</sign>
+					<verbose>true</verbose>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<name>Transportliste/App Project</name>
+
+	<parent>
+		<groupId>Transportliste</groupId>
+		<artifactId>Transportliste</artifactId>
+		<version>1.0</version>
+	</parent>
+</project>

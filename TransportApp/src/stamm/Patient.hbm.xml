@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14.11.2013 06:31:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="stamm.Patient" table="PATIENT">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="lastName" type="java.lang.String">
+            <column name="LNAME" />
+        </property>
+        <property name="firstName" type="java.lang.String">
+            <column name="FNAME" />
+        </property>
+        <property name="patNum" type="java.lang.String">
+            <column name="PATNR" />
+        </property>
+        <property name="strasse" type="java.lang.String">
+            <column name="STREET" />
+        </property>
+        <property name="ort" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="plz" type="java.lang.String">
+            <column name="ZIPCODE" />
+        </property>
+         <property name="insurance" type="java.lang.Integer">
+            <column name="INSURANCE"/>
+            </property>
+          <property name="telefon" type="java.lang.String">
+            <column name="TELEFON" />
+        </property>    
+    </class>
+</hibernate-mapping>

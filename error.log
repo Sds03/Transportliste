@@ -1,0 +1,1621 @@
+Apache Maven 3.2.1 (ea8b2b07643dbb1b84b6d16e1f08391b666bc1e9; 2014-02-14T18:37:52+01:00)
+Maven home: f:\apache-maven-3.2.1\bin\..
+Java version: 1.6.0_41, vendor: Sun Microsystems Inc.
+Java home: c:\programme\java\jdk1.6.0_41\jre
+Default locale: de_DE, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "x86", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from f:\apache-maven-3.2.1\bin\..\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\user\.m2\settings.xml
+[DEBUG] Using local repository at C:\Users\user\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\user\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project Transportliste:Transportliste:pom:1.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project TransportApp:TransportApp:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project TransportWeb:TransportWeb:war:1.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging war from ClassRealm[plexus.core, parent: null]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for TransportApp:TransportApp:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:tomcat-maven-plugin is missing. @ Transportliste:Transportliste:1.0, F:\workspace\Transportliste\pom.xml, line 12, column 11
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for TransportWeb:TransportWeb:war:1.0
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:tomcat-maven-plugin is missing. @ Transportliste:Transportliste:1.0, F:\workspace\Transportliste\pom.xml, line 12, column 11
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for Transportliste:Transportliste:pom:1.0
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:tomcat-maven-plugin is missing. @ line 12, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Transportliste Project
+[INFO] Transportliste/App Project
+[INFO] Transportliste/Web Project
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: Transportliste:Transportliste:pom:1.0
+[DEBUG] Tasks:   [install]
+[DEBUG] Style:   Regular
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Project: TransportApp:TransportApp:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [install]
+[DEBUG] Style:   Regular
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Project: TransportWeb:TransportWeb:war:1.0
+[DEBUG] Tasks:   [install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Transportliste Project 1.0
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Resolving plugin version for org.codehaus.mojo:tomcat-maven-plugin
+[DEBUG] Could not find metadata org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml in local (C:\Users\user\.m2\repository)
+[DEBUG] Skipped remote update check for org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.codehaus.mojo:tomcat-maven-plugin to 1.1 from repository central (http://repo.maven.apache.org/maven2, releases)
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       Transportliste:Transportliste:1.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] Repositories (dependencies): [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ Transportliste ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=94, DefaultDependencyCollector.transformTime=16}
+[DEBUG] org.apache.maven.plugins:maven-install-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-digest:jar:1.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-install-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-digest:jar:1.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.4:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.4:install' with basic configurator -->
+[DEBUG]   (f) artifact = Transportliste:Transportliste:pom:1.0
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =        id: local
+      url: file:///C:/Users/user/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) packaging = pom
+[DEBUG]   (f) pomFile = F:\workspace\Transportliste\pom.xml
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] Installing F:\workspace\Transportliste\pom.xml to C:\Users\user\.m2\repository\Transportliste\Transportliste\1.0\Transportliste-1.0.pom
+[DEBUG] Writing tracking file C:\Users\user\.m2\repository\Transportliste\Transportliste\1.0\_remote.repositories
+[DEBUG] Installing Transportliste:Transportliste/maven-metadata.xml to C:\Users\user\.m2\repository\Transportliste\Transportliste\maven-metadata-local.xml
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Transportliste/App Project 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Resolving plugin version for org.codehaus.mojo:tomcat-maven-plugin
+[DEBUG] Could not find metadata org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml in local (C:\Users\user\.m2\repository)
+[DEBUG] Skipped remote update check for org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.codehaus.mojo:tomcat-maven-plugin to 1.1 from repository central (http://repo.maven.apache.org/maven2, releases)
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       TransportApp:TransportApp:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [atomation-repository (http://atomation-repository.googlecode.com/svn/trunk, releases+snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">true</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.6</target>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <showDeprecation default-value="false">true</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.6</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">${jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6:jnlp-inline (default)
+[DEBUG] Style:         Aggregating
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archive default-value="${project.build.directory}/${project.build.finalName}.zip">${jnlp.archive}</archive>
+  <attachArchive default-value="true">${jnlp.attachArchive}</attachArchive>
+  <basedir default-value="${basedir}"/>
+  <canUnsign default-value="true">${jnlp.canUnsign}</canUnsign>
+  <codebase default-value="${project.url}/jnlp">${jnlp.codebase}</codebase>
+  <compileClassPath default-value="${project.compileClasspathElements}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${jnlp.encoding}</encoding>
+  <excludeTransitive>${jnlp.excludeTransitive}</excludeTransitive>
+  <filenameMapping default-value="simple">${jnlp.filenameMapping}</filenameMapping>
+  <gzip default-value="false">${jnlp.gzip}</gzip>
+  <jnlp>
+    <outputFile>launch.jnlp</outputFile>
+    <mainClass>Start</mainClass>
+  </jnlp>
+  <libPath default-value="">${jnlp.libPath}</libPath>
+  <localRepository default-value="${localRepository}"/>
+  <makeArchive default-value="true">${jnlp.makeArchive}</makeArchive>
+  <outputJarVersions default-value="false">${jnlp.outputJarVersions}</outputJarVersions>
+  <remoteRepositories default-value="${project.remoteArtifactRepositories}"/>
+  <resourcesDirectory>${jnlp.resourcesDirectory}</resourcesDirectory>
+  <sign>
+    <keystore>/workspace/transportliste/transportliste.jks</keystore>
+    <keypass>akrd1234</keypass>
+    <storepass>akrd1234</storepass>
+    <storetype>jks</storetype>
+    <alias>servercert</alias>
+    <verify>true</verify>
+  </sign>
+  <templateDirectory default-value="${project.basedir}/src/main/jnlp">${jnlp.templateDirectory}</templateDirectory>
+  <unsignAlreadySignedJars default-value="false">${jnlp.unsign}</unsignAlreadySignedJars>
+  <verbose default-value="false">true</verbose>
+  <workDirectory default-value="${project.build.directory}/jnlp">${jnlp.workDirectory}</workDirectory>
+  <project default-value="${project}"/>
+</configuration>
+[DEBUG] =======================================================================
+[WARNING] The POM for org.mozilla:MozillaInterfaces:jar:1.9 is invalid, transitive dependencies (if any) will not be available: 4 problems were encountered while building the effective model for ::
+[ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+
+[WARNING] The POM for org.mozilla:MozillaGlue:jar:1.9 is invalid, transitive dependencies (if any) will not be available: 4 problems were encountered while building the effective model for ::
+[ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+
+[WARNING] The POM for org.mozilla:mozdom4java:jar:stable is invalid, transitive dependencies (if any) will not be available: 4 problems were encountered while building the effective model for ::
+[ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=359, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=101, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16, ConflictResolver.conflictItemCount=190, DefaultDependencyCollector.collectTime=608, DefaultDependencyCollector.transformTime=16}
+[DEBUG] TransportApp:TransportApp:jar:0.0.1-SNAPSHOT
+[DEBUG]    antlr:antlr:jar:2.7.6:compile
+[DEBUG]    commons-collections:commons-collections:jar:3.1:compile
+[DEBUG]    dom4j:dom4j:jar:1.6.1:compile
+[DEBUG]       xml-apis:xml-apis:jar:1.0.b2:compile
+[DEBUG]    javassist:javassist:jar:3.9.0.GA:compile
+[DEBUG]    org.slf4j:slf4j-log4j12:jar:1.7.5:compile
+[DEBUG]       log4j:log4j:jar:1.2.17:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    mysql:mysql-connector-java:jar:5.1.22:compile
+[DEBUG]    net.sourceforge.jdatepicker:jdatepicker:jar:1.3.2:compile
+[DEBUG]    ru.atomation.jbrowser:jbrowser:jar:1.9:compile
+[DEBUG]       org.mozilla:MozillaInterfaces:jar:1.9:compile
+[DEBUG]       org.mozilla:MozillaGlue:jar:1.9:compile
+[DEBUG]       org.mozilla:mozdom4java:jar:stable:compile
+[DEBUG]       commons-logging:commons-logging:jar:1.1.1:compile
+[DEBUG]       net.java.dev.jna:jna:jar:3.2.2:compile
+[DEBUG]       commons-io:commons-io:jar:1.3.2:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.0:compile
+[DEBUG]    org.hibernate:hibernate-core:jar:3.3.2.GA:compile
+[DEBUG]       javax.transaction:jta:jar:1.1:compile
+[DEBUG]    org.codehaus.mojo:webstart-maven-plugin:jar:1.0-beta-6:compile
+[DEBUG]       org.codehaus.mojo:webstart-pack200-api:jar:1.0-beta-6:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.10:compile
+[DEBUG]          org.apache.maven:maven-profile:jar:2.0.10:compile
+[DEBUG]          org.apache.maven:maven-artifact-manager:jar:2.0.10:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.10:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]             junit:junit:jar:3.8.1:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.0.10:compile
+[DEBUG]          org.apache.maven.wagon:wagon-file:jar:1.0-beta-2:runtime
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.10:compile
+[DEBUG]          org.apache.maven.wagon:wagon-webdav:jar:1.0-beta-2:runtime
+[DEBUG]             slide:slide-webdavlib:jar:2.1:runtime
+[DEBUG]                commons-httpclient:commons-httpclient:jar:2.0.2:runtime
+[DEBUG]                jdom:jdom:jar:1.0:runtime
+[DEBUG]                de.zeigermann.xml:xml-im-exporter:jar:1.1:runtime
+[DEBUG]          org.apache.maven.wagon:wagon-http-lightweight:jar:1.0-beta-2:runtime
+[DEBUG]             org.apache.maven.wagon:wagon-http-shared:jar:1.0-beta-2:runtime
+[DEBUG]                jtidy:jtidy:jar:4aug2000r7-dev:runtime
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0.10:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.0.10:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]          org.apache.maven.wagon:wagon-ssh-external:jar:1.0-beta-2:runtime
+[DEBUG]             org.apache.maven.wagon:wagon-ssh-common:jar:1.0-beta-2:compile
+[DEBUG]          org.apache.maven:maven-plugin-descriptor:jar:2.0.10:compile
+[DEBUG]          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.0.10:compile
+[DEBUG]          org.apache.maven.wagon:wagon-ssh:jar:1.0-beta-2:compile
+[DEBUG]             com.jcraft:jsch:jar:0.1.27:compile
+[DEBUG]          classworlds:classworlds:jar:1.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.10:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.10:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-11:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-impl:jar:2.0.4:compile
+[DEBUG]          commons-validator:commons-validator:jar:1.2.0:compile
+[DEBUG]             commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[DEBUG]             commons-digester:commons-digester:jar:1.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-core:jar:1.0-alpha-7:compile
+[DEBUG]          oro:oro:jar:2.0.7:compile
+[DEBUG]          org.apache.maven.doxia:doxia-site-renderer:jar:1.0-alpha-7:compile
+[DEBUG]             org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6:compile
+[DEBUG]             org.codehaus.plexus:plexus-velocity:jar:1.1.2:compile
+[DEBUG]                commons-logging:commons-logging-api:jar:1.0.4:compile
+[DEBUG]                velocity:velocity:jar:1.4:compile
+[DEBUG]                   velocity:velocity-dep:jar:1.4:runtime
+[DEBUG]             org.apache.maven.doxia:doxia-decoration-model:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:0.5:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       org.apache.maven.shared:maven-jarsigner:jar:1.3.1:compile
+[DEBUG]          org.apache.maven:maven-toolchain:jar:2.1.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.4.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.0.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.10:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.7:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       org.codehaus.mojo:webstart-pack200-impl:jar:1.0-beta-6:runtime
+[DEBUG]       org.codehaus.mojo:keytool-api-1.6:jar:1.4:compile
+[DEBUG]          org.codehaus.mojo:keytool-api:jar:1.4:compile
+[DEBUG]    junit:junit:pom.lastUpdated:4.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ TransportApp ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=63, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = F:\workspace\Transportliste\TransportApp\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: TransportApp:TransportApp:0.0.1-SNAPSHOT @ F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: F:\workspace\Transportliste\TransportApp\src, PatternSet [includes: {}, excludes: {**/*.java}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Sun Microsystems Inc., env.SYSTEMROOT=C:\Windows, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, env.PROMPT=$P$G, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=c:\programme\java\jdk1.6.0_41\jre\lib\resources.jar;c:\programme\java\jdk1.6.0_41\jre\lib\rt.jar;c:\programme\java\jdk1.6.0_41\jre\lib\sunrsasign.jar;c:\programme\java\jdk1.6.0_41\jre\lib\jsse.jar;c:\programme\java\jdk1.6.0_41\jre\lib\jce.jar;c:\programme\java\jdk1.6.0_41\jre\lib\charsets.jar;c:\programme\java\jdk1.6.0_41\jre\lib\modules\jdk.boot.jar;c:\programme\java\jdk1.6.0_41\jre\classes, env.COMPUTERNAME=JOEBLACK, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Sun Microsystems Inc., java.runtime.version=1.6.0_41-b02, env.HOMEPATH=\Users\user, user.name=user, maven.build.version=Apache Maven 3.2.1 (ea8b2b07643dbb1b84b6d16e1f08391b666bc1e9; 2014-02-14T18:37:52+01:00), env.PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Panda Security\WaAgent\Common;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Ruby193\bin;f:\ruby;c:\programme\java\jdk1.6.0_41\bin;f:\apache-maven-3.2.1\bin, user.language=de, env.WINDIR=C:\Windows, sun.boot.library.path=c:\programme\java\jdk1.6.0_41\jre\bin, classworlds.conf=f:\apache-maven-3.2.1\bin\..\bin\m2.conf, java.version=1.6.0_41, env.PROCESSOR_IDENTIFIER=x86 Family 6 Model 37 Stepping 5, GenuineIntel, user.timezone=Europe/Berlin, env.TEMP=C:\Users\user\AppData\Local\Temp, sun.arch.data.model=32, java.endorsed.dirs=c:\programme\java\jdk1.6.0_41\jre\lib\endorsed, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86, env.HOMEDRIVE=C:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=50.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=DE, java.home=c:\programme\java\jdk1.6.0_41\jre, env.APPDATA=C:\Users\user\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, sharing, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=20.14-b01, env.USERPROFILE=C:\Users\user, user.variant=, env.=F:=F:\workspace\Transportliste, env.JAVA_HOME=c:\programme\java\jdk1.6.0_41, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\user\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.home=C:\Users\user, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.=EXITCODE=00000001, env.SESSIONNAME=Console, java.specification.vendor=Sun Microsystems Inc., env.M2_HOME=f:\apache-maven-3.2.1\bin\.., env.NUMBER_OF_PROCESSORS=4, java.library.path=c:\programme\java\jdk1.6.0_41\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Panda Security\WaAgent\Common;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Ruby193\bin;f:\ruby;c:\programme\java\jdk1.6.0_41\bin;f:\apache-maven-3.2.1\bin;., java.vendor.url=http://java.sun.com/, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\;c:\Program Files\Microsoft SQL Server\110\Tools\PowerShell\Modules\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=install -X, java.vm.vendor=Sun Microsystems Inc., maven.home=f:\apache-maven-3.2.1\bin\.., java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -X, java.class.path=f:\apache-maven-3.2.1\bin\..\boot\plexus-classworlds-2.5.1.jar, maven.version=3.2.1, env.MAVEN_JAVA_EXE="c:\programme\java\jdk1.6.0_41\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\JOEBLACK, java.vm.specification.version=1.0, env.PROCESSOR_ARCHITECTURE=x86, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=C:\Users\user, env.PROCESSOR_REVISION=2505, java.io.tmpdir=C:\Users\user\AppData\Local\Temp\, env.VS120COMNTOOLS=C:\Program Files\Microsoft Visual Studio 12.0\Common7\Tools\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=x86, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=c:\programme\java\jdk1.6.0_41\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.LOCALAPPDATA=C:\Users\user\AppData\Local, user.dir=F:\workspace\Transportliste, line.separator=
+, env.CLASSWORLDS_JAR="f:\apache-maven-3.2.1\bin\..\boot\plexus-classworlds-2.5.1.jar", java.vm.name=Java HotSpot(TM) Client VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW, env.JRE_HOME=c:\program files\java\jdk1.6.0_41\jre, env.ERROR_CODE=0, env.USERNAME=user, file.encoding=Cp1252, env.USERDOMAIN=joeblack, java.specification.version=1.6, env.=C:=C:\Users\user, env.PROCESSOR_LEVEL=6}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory F:\workspace\Transportliste\TransportApp\src
+excludes [**/*.java]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 37 resources
+[DEBUG] file JCalendarColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JCalendarColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JCalendarColor16.gif
+[DEBUG] file JCalendarColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JCalendarColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JCalendarColor32.gif
+[DEBUG] file JCalendarMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JCalendarMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JCalendarMono16.gif
+[DEBUG] file JCalendarMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JCalendarMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JCalendarMono32.gif
+[DEBUG] file JDateChooserColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDateChooserColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDateChooserColor16.gif
+[DEBUG] file JDateChooserColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDateChooserColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDateChooserColor32.gif
+[DEBUG] file JDateChooserIcon.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDateChooserIcon.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDateChooserIcon.gif
+[DEBUG] file JDateChooserMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDateChooserMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDateChooserMono16.gif
+[DEBUG] file JDateChooserMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDateChooserMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDateChooserMono32.gif
+[DEBUG] file JDayChooserColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDayChooserColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDayChooserColor16.gif
+[DEBUG] file JDayChooserColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDayChooserColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDayChooserColor32.gif
+[DEBUG] file JDayChooserMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDayChooserMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDayChooserMono16.gif
+[DEBUG] file JDayChooserMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JDayChooserMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JDayChooserMono32.gif
+[DEBUG] file JMonthChooserColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JMonthChooserColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JMonthChooserColor16.gif
+[DEBUG] file JMonthChooserColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JMonthChooserColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JMonthChooserColor32.gif
+[DEBUG] file JMonthChooserMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JMonthChooserMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JMonthChooserMono16.gif
+[DEBUG] file JMonthChooserMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JMonthChooserMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JMonthChooserMono32.gif
+[DEBUG] file JYearChooserColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JYearChooserColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JYearChooserColor16.gif
+[DEBUG] file JYearChooserColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JYearChooserColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JYearChooserColor32.gif
+[DEBUG] file JYearChooserMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JYearChooserMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JYearChooserMono16.gif
+[DEBUG] file JYearChooserMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\calendar\images\JYearChooserMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\calendar\images\JYearChooserMono32.gif
+[DEBUG] file JLocaleChooserColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JLocaleChooserColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JLocaleChooserColor16.gif
+[DEBUG] file JLocaleChooserColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JLocaleChooserColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JLocaleChooserColor32.gif
+[DEBUG] file JLocaleChooserMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JLocaleChooserMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JLocaleChooserMono16.gif
+[DEBUG] file JLocaleChooserMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JLocaleChooserMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JLocaleChooserMono32.gif
+[DEBUG] file JSpinFieldColor16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JSpinFieldColor16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JSpinFieldColor16.gif
+[DEBUG] file JSpinFieldColor32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JSpinFieldColor32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JSpinFieldColor32.gif
+[DEBUG] file JSpinFieldMono16.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JSpinFieldMono16.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JSpinFieldMono16.gif
+[DEBUG] file JSpinFieldMono32.gif has a non filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\com\toedter\components\images\JSpinFieldMono32.gif to F:\workspace\Transportliste\TransportApp\target\classes\com\toedter\components\images\JSpinFieldMono32.gif
+[DEBUG] file hibernate.cfg.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\hibernate.cfg.xml to F:\workspace\Transportliste\TransportApp\target\classes\hibernate.cfg.xml
+[DEBUG] file template.vm has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\main\jnlp\template.vm to F:\workspace\Transportliste\TransportApp\target\classes\main\jnlp\template.vm
+[DEBUG] file Driver.hbm.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\stamm\Driver.hbm.xml to F:\workspace\Transportliste\TransportApp\target\classes\stamm\Driver.hbm.xml
+[DEBUG] file Insurance.hbm.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\stamm\Insurance.hbm.xml to F:\workspace\Transportliste\TransportApp\target\classes\stamm\Insurance.hbm.xml
+[DEBUG] file Patient.hbm.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\stamm\Patient.hbm.xml to F:\workspace\Transportliste\TransportApp\target\classes\stamm\Patient.hbm.xml
+[DEBUG] file Taxi.hbm.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\stamm\Taxi.hbm.xml to F:\workspace\Transportliste\TransportApp\target\classes\stamm\Taxi.hbm.xml
+[DEBUG] file Tour.hbm.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\stamm\Tour.hbm.xml to F:\workspace\Transportliste\TransportApp\target\classes\stamm\Tour.hbm.xml
+[DEBUG] file Trip.hbm.xml has a filtered file extension
+[DEBUG] copy F:\workspace\Transportliste\TransportApp\src\stamm\Trip.hbm.xml to F:\workspace\Transportliste\TransportApp\target\classes\stamm\Trip.hbm.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ TransportApp ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=156, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.0:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.0
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.0, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.0:compile' with basic configurator -->
+[DEBUG]   (f) basedir = F:\workspace\Transportliste\TransportApp
+[DEBUG]   (f) buildDirectory = F:\workspace\Transportliste\TransportApp\target
+[DEBUG]   (f) classpathElements = [F:\workspace\Transportliste\TransportApp\target\classes, C:\Users\user\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar, C:\Users\user\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar, C:\Users\user\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar, C:\Users\user\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar, C:\Users\user\.m2\repository\javassist\javassist\3.9.0.GA\javassist-3.9.0.GA.jar, C:\Users\user\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar, C:\Users\user\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar, C:\Users\user\.m2\repository\mysql\mysql-connector-java\5.1.22\mysql-connector-java-5.1.22.jar, C:\Users\user\.m2\repository\net\sourceforge\jdatepicker\jdatepicker\1.3.2\jdatepicker-1.3.2.jar, C:\Users\user\.m2\repository\ru\atomation\jbrowser\jbrowser\1.9\jbrowser-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\MozillaInterfaces\1.9\MozillaInterfaces-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\MozillaGlue\1.9\MozillaGlue-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\mozdom4java\stable\mozdom4java-stable.jar, C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar, C:\Users\user\.m2\repository\net\java\dev\jna\jna\3.2.2\jna-3.2.2.jar, C:\Users\user\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar, C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.0\commons-compress-1.0.jar, C:\Users\user\.m2\repository\org\hibernate\hibernate-core\3.3.2.GA\hibernate-core-3.3.2.GA.jar, C:\Users\user\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-maven-plugin\1.0-beta-6\webstart-maven-plugin-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-api\1.0-beta-6\webstart-pack200-api-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-model\2.0.10\maven-model-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-artifact\2.0.10\maven-artifact-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-project\2.0.10\maven-project-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-profile\2.0.10\maven-profile-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.10\maven-artifact-manager-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.10\maven-plugin-registry-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.1\plexus-interpolation-1.1.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar, C:\Users\user\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-core\2.0.10\maven-core-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.10\maven-plugin-parameter-documenter-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.10\maven-repository-metadata-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.10\maven-error-diagnostics-2.0.10.jar, C:\Users\user\.m2\repository\commons-cli\commons-cli\1.0\commons-cli-1.0.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-common\1.0-beta-2\wagon-ssh-common-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.10\maven-plugin-descriptor-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.0-alpha-4\plexus-interactivity-api-1.0-alpha-4.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-monitor\2.0.10\maven-monitor-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh\1.0-beta-2\wagon-ssh-1.0-beta-2.jar, C:\Users\user\.m2\repository\com\jcraft\jsch\0.1.27\jsch-0.1.27.jar, C:\Users\user\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-settings\2.0.10\maven-settings-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar, C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.10\maven-reporting-api-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-11\doxia-sink-api-1.0-alpha-11.jar, C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4\maven-reporting-impl-2.0.4.jar, C:\Users\user\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar, C:\Users\user\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar, C:\Users\user\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-core\1.0-alpha-7\doxia-core-1.0-alpha-7.jar, C:\Users\user\.m2\repository\oro\oro\2.0.7\oro-2.0.7.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0-alpha-7\doxia-site-renderer-1.0-alpha-7.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-6\plexus-i18n-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.2\plexus-velocity-1.1.2.jar, C:\Users\user\.m2\repository\commons-logging\commons-logging-api\1.0.4\commons-logging-api-1.0.4.jar, C:\Users\user\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0-alpha-7\doxia-decoration-model-1.0-alpha-7.jar, C:\Users\user\.m2\repository\org\apache\maven\shared\maven-shared-utils\0.5\maven-shared-utils-0.5.jar, C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar, C:\Users\user\.m2\repository\org\apache\maven\shared\maven-jarsigner\1.3.1\maven-jarsigner-1.3.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-toolchain\2.1.0\maven-toolchain-2.1.0.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-archiver\2.4.1\plexus-archiver-2.4.1.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-io\2.0.7\plexus-io-2.0.7.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar, C:\Users\user\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar, C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api-1.6\1.4\keytool-api-1.6-1.4.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api\1.4\keytool-api-1.4.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar]
+[DEBUG]   (f) compileSourceRoots = [F:\workspace\Transportliste\TransportApp\src]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = F:\workspace\Transportliste\TransportApp\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = F:\workspace\Transportliste\TransportApp\target\classes
+[DEBUG]   (f) projectArtifact = TransportApp:TransportApp:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) showDeprecation = true
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.6
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.6
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [F:\workspace\Transportliste\TransportApp\src]
+[DEBUG] Classpath: [F:\workspace\Transportliste\TransportApp\target\classes
+ C:\Users\user\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar
+ C:\Users\user\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar
+ C:\Users\user\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar
+ C:\Users\user\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar
+ C:\Users\user\.m2\repository\javassist\javassist\3.9.0.GA\javassist-3.9.0.GA.jar
+ C:\Users\user\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar
+ C:\Users\user\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+ C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar
+ C:\Users\user\.m2\repository\mysql\mysql-connector-java\5.1.22\mysql-connector-java-5.1.22.jar
+ C:\Users\user\.m2\repository\net\sourceforge\jdatepicker\jdatepicker\1.3.2\jdatepicker-1.3.2.jar
+ C:\Users\user\.m2\repository\ru\atomation\jbrowser\jbrowser\1.9\jbrowser-1.9.jar
+ C:\Users\user\.m2\repository\org\mozilla\MozillaInterfaces\1.9\MozillaInterfaces-1.9.jar
+ C:\Users\user\.m2\repository\org\mozilla\MozillaGlue\1.9\MozillaGlue-1.9.jar
+ C:\Users\user\.m2\repository\org\mozilla\mozdom4java\stable\mozdom4java-stable.jar
+ C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar
+ C:\Users\user\.m2\repository\net\java\dev\jna\jna\3.2.2\jna-3.2.2.jar
+ C:\Users\user\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar
+ C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.0\commons-compress-1.0.jar
+ C:\Users\user\.m2\repository\org\hibernate\hibernate-core\3.3.2.GA\hibernate-core-3.3.2.GA.jar
+ C:\Users\user\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar
+ C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-maven-plugin\1.0-beta-6\webstart-maven-plugin-1.0-beta-6.jar
+ C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-api\1.0-beta-6\webstart-pack200-api-1.0-beta-6.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-model\2.0.10\maven-model-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-artifact\2.0.10\maven-artifact-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-project\2.0.10\maven-project-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-profile\2.0.10\maven-profile-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.10\maven-artifact-manager-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.10\maven-plugin-registry-2.0.10.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.1\plexus-interpolation-1.1.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar
+ C:\Users\user\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-core\2.0.10\maven-core-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.10\maven-plugin-parameter-documenter-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.10\maven-repository-metadata-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.10\maven-error-diagnostics-2.0.10.jar
+ C:\Users\user\.m2\repository\commons-cli\commons-cli\1.0\commons-cli-1.0.jar
+ C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-common\1.0-beta-2\wagon-ssh-common-1.0-beta-2.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.10\maven-plugin-descriptor-2.0.10.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.0-alpha-4\plexus-interactivity-api-1.0-alpha-4.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-monitor\2.0.10\maven-monitor-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh\1.0-beta-2\wagon-ssh-1.0-beta-2.jar
+ C:\Users\user\.m2\repository\com\jcraft\jsch\0.1.27\jsch-0.1.27.jar
+ C:\Users\user\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-settings\2.0.10\maven-settings-2.0.10.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+ C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.10\maven-reporting-api-2.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-11\doxia-sink-api-1.0-alpha-11.jar
+ C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4\maven-reporting-impl-2.0.4.jar
+ C:\Users\user\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar
+ C:\Users\user\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar
+ C:\Users\user\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar
+ C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-core\1.0-alpha-7\doxia-core-1.0-alpha-7.jar
+ C:\Users\user\.m2\repository\oro\oro\2.0.7\oro-2.0.7.jar
+ C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0-alpha-7\doxia-site-renderer-1.0-alpha-7.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-6\plexus-i18n-1.0-beta-6.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.2\plexus-velocity-1.1.2.jar
+ C:\Users\user\.m2\repository\commons-logging\commons-logging-api\1.0.4\commons-logging-api-1.0.4.jar
+ C:\Users\user\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar
+ C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0-alpha-7\doxia-decoration-model-1.0-alpha-7.jar
+ C:\Users\user\.m2\repository\org\apache\maven\shared\maven-shared-utils\0.5\maven-shared-utils-0.5.jar
+ C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar
+ C:\Users\user\.m2\repository\org\apache\maven\shared\maven-jarsigner\1.3.1\maven-jarsigner-1.3.1.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-toolchain\2.1.0\maven-toolchain-2.1.0.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-archiver\2.4.1\plexus-archiver-2.4.1.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-io\2.0.7\plexus-io-2.0.7.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar
+ C:\Users\user\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar
+ C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar
+ C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api-1.6\1.4\keytool-api-1.6-1.4.jar
+ C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api\1.4\keytool-api-1.4.jar
+ C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar
+ C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar
+ C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar
+ C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar
+ C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar]
+[DEBUG] Output directory: F:\workspace\Transportliste\TransportApp\target\classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ TransportApp ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = F:\workspace\Transportliste\TransportApp\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: TransportApp:TransportApp:0.0.1-SNAPSHOT @ F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: F:\workspace\Transportliste\TransportApp\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Sun Microsystems Inc., env.SYSTEMROOT=C:\Windows, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, env.PROMPT=$P$G, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=c:\programme\java\jdk1.6.0_41\jre\lib\resources.jar;c:\programme\java\jdk1.6.0_41\jre\lib\rt.jar;c:\programme\java\jdk1.6.0_41\jre\lib\sunrsasign.jar;c:\programme\java\jdk1.6.0_41\jre\lib\jsse.jar;c:\programme\java\jdk1.6.0_41\jre\lib\jce.jar;c:\programme\java\jdk1.6.0_41\jre\lib\charsets.jar;c:\programme\java\jdk1.6.0_41\jre\lib\modules\jdk.boot.jar;c:\programme\java\jdk1.6.0_41\jre\classes, env.COMPUTERNAME=JOEBLACK, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Sun Microsystems Inc., java.runtime.version=1.6.0_41-b02, env.HOMEPATH=\Users\user, user.name=user, maven.build.version=Apache Maven 3.2.1 (ea8b2b07643dbb1b84b6d16e1f08391b666bc1e9; 2014-02-14T18:37:52+01:00), env.PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Panda Security\WaAgent\Common;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Ruby193\bin;f:\ruby;c:\programme\java\jdk1.6.0_41\bin;f:\apache-maven-3.2.1\bin, user.language=de, env.WINDIR=C:\Windows, sun.boot.library.path=c:\programme\java\jdk1.6.0_41\jre\bin, classworlds.conf=f:\apache-maven-3.2.1\bin\..\bin\m2.conf, java.version=1.6.0_41, env.PROCESSOR_IDENTIFIER=x86 Family 6 Model 37 Stepping 5, GenuineIntel, user.timezone=Europe/Berlin, env.TEMP=C:\Users\user\AppData\Local\Temp, sun.arch.data.model=32, java.endorsed.dirs=c:\programme\java\jdk1.6.0_41\jre\lib\endorsed, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86, env.HOMEDRIVE=C:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=50.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=DE, java.home=c:\programme\java\jdk1.6.0_41\jre, env.APPDATA=C:\Users\user\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, sharing, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=20.14-b01, env.USERPROFILE=C:\Users\user, user.variant=, env.=F:=F:\workspace\Transportliste, env.JAVA_HOME=c:\programme\java\jdk1.6.0_41, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\user\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.home=C:\Users\user, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.=EXITCODE=00000001, env.SESSIONNAME=Console, java.specification.vendor=Sun Microsystems Inc., env.M2_HOME=f:\apache-maven-3.2.1\bin\.., env.NUMBER_OF_PROCESSORS=4, java.library.path=c:\programme\java\jdk1.6.0_41\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Panda Security\WaAgent\Common;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Ruby193\bin;f:\ruby;c:\programme\java\jdk1.6.0_41\bin;f:\apache-maven-3.2.1\bin;., java.vendor.url=http://java.sun.com/, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\;c:\Program Files\Microsoft SQL Server\110\Tools\PowerShell\Modules\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=install -X, java.vm.vendor=Sun Microsystems Inc., maven.home=f:\apache-maven-3.2.1\bin\.., java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -X, java.class.path=f:\apache-maven-3.2.1\bin\..\boot\plexus-classworlds-2.5.1.jar, maven.version=3.2.1, env.MAVEN_JAVA_EXE="c:\programme\java\jdk1.6.0_41\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\JOEBLACK, java.vm.specification.version=1.0, env.PROCESSOR_ARCHITECTURE=x86, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=C:\Users\user, env.PROCESSOR_REVISION=2505, java.io.tmpdir=C:\Users\user\AppData\Local\Temp\, env.VS120COMNTOOLS=C:\Program Files\Microsoft Visual Studio 12.0\Common7\Tools\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=x86, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=c:\programme\java\jdk1.6.0_41\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.LOCALAPPDATA=C:\Users\user\AppData\Local, user.dir=F:\workspace\Transportliste, line.separator=
+, env.CLASSWORLDS_JAR="f:\apache-maven-3.2.1\bin\..\boot\plexus-classworlds-2.5.1.jar", java.vm.name=Java HotSpot(TM) Client VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW, env.JRE_HOME=c:\program files\java\jdk1.6.0_41\jre, env.ERROR_CODE=0, env.USERNAME=user, file.encoding=Cp1252, env.USERDOMAIN=joeblack, java.specification.version=1.6, env.=C:=C:\Users\user, env.PROCESSOR_LEVEL=6}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory F:\workspace\Transportliste\TransportApp\src\test\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory F:\workspace\Transportliste\TransportApp\src\test\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ TransportApp ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.0, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.0:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = F:\workspace\Transportliste\TransportApp
+[DEBUG]   (f) buildDirectory = F:\workspace\Transportliste\TransportApp\target
+[DEBUG]   (f) classpathElements = [F:\workspace\Transportliste\TransportApp\target\test-classes, F:\workspace\Transportliste\TransportApp\target\classes, C:\Users\user\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar, C:\Users\user\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar, C:\Users\user\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar, C:\Users\user\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar, C:\Users\user\.m2\repository\javassist\javassist\3.9.0.GA\javassist-3.9.0.GA.jar, C:\Users\user\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar, C:\Users\user\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar, C:\Users\user\.m2\repository\mysql\mysql-connector-java\5.1.22\mysql-connector-java-5.1.22.jar, C:\Users\user\.m2\repository\net\sourceforge\jdatepicker\jdatepicker\1.3.2\jdatepicker-1.3.2.jar, C:\Users\user\.m2\repository\ru\atomation\jbrowser\jbrowser\1.9\jbrowser-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\MozillaInterfaces\1.9\MozillaInterfaces-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\MozillaGlue\1.9\MozillaGlue-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\mozdom4java\stable\mozdom4java-stable.jar, C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar, C:\Users\user\.m2\repository\net\java\dev\jna\jna\3.2.2\jna-3.2.2.jar, C:\Users\user\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar, C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.0\commons-compress-1.0.jar, C:\Users\user\.m2\repository\org\hibernate\hibernate-core\3.3.2.GA\hibernate-core-3.3.2.GA.jar, C:\Users\user\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-maven-plugin\1.0-beta-6\webstart-maven-plugin-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-api\1.0-beta-6\webstart-pack200-api-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-model\2.0.10\maven-model-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-artifact\2.0.10\maven-artifact-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-project\2.0.10\maven-project-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-profile\2.0.10\maven-profile-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.10\maven-artifact-manager-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.10\maven-plugin-registry-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.1\plexus-interpolation-1.1.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar, C:\Users\user\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-core\2.0.10\maven-core-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-file\1.0-beta-2\wagon-file-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.10\maven-plugin-parameter-documenter-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-webdav\1.0-beta-2\wagon-webdav-1.0-beta-2.jar, C:\Users\user\.m2\repository\slide\slide-webdavlib\2.1\slide-webdavlib-2.1.jar, C:\Users\user\.m2\repository\commons-httpclient\commons-httpclient\2.0.2\commons-httpclient-2.0.2.jar, C:\Users\user\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar, C:\Users\user\.m2\repository\de\zeigermann\xml\xml-im-exporter\1.1\xml-im-exporter-1.1.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-http-lightweight\1.0-beta-2\wagon-http-lightweight-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-http-shared\1.0-beta-2\wagon-http-shared-1.0-beta-2.jar, C:\Users\user\.m2\repository\jtidy\jtidy\4aug2000r7-dev\jtidy-4aug2000r7-dev.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.10\maven-repository-metadata-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.10\maven-error-diagnostics-2.0.10.jar, C:\Users\user\.m2\repository\commons-cli\commons-cli\1.0\commons-cli-1.0.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-external\1.0-beta-2\wagon-ssh-external-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-common\1.0-beta-2\wagon-ssh-common-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.10\maven-plugin-descriptor-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.0-alpha-4\plexus-interactivity-api-1.0-alpha-4.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-monitor\2.0.10\maven-monitor-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh\1.0-beta-2\wagon-ssh-1.0-beta-2.jar, C:\Users\user\.m2\repository\com\jcraft\jsch\0.1.27\jsch-0.1.27.jar, C:\Users\user\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-settings\2.0.10\maven-settings-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar, C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.10\maven-reporting-api-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-11\doxia-sink-api-1.0-alpha-11.jar, C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4\maven-reporting-impl-2.0.4.jar, C:\Users\user\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar, C:\Users\user\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar, C:\Users\user\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-core\1.0-alpha-7\doxia-core-1.0-alpha-7.jar, C:\Users\user\.m2\repository\oro\oro\2.0.7\oro-2.0.7.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0-alpha-7\doxia-site-renderer-1.0-alpha-7.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-6\plexus-i18n-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.2\plexus-velocity-1.1.2.jar, C:\Users\user\.m2\repository\commons-logging\commons-logging-api\1.0.4\commons-logging-api-1.0.4.jar, C:\Users\user\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar, C:\Users\user\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0-alpha-7\doxia-decoration-model-1.0-alpha-7.jar, C:\Users\user\.m2\repository\org\apache\maven\shared\maven-shared-utils\0.5\maven-shared-utils-0.5.jar, C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar, C:\Users\user\.m2\repository\org\apache\maven\shared\maven-jarsigner\1.3.1\maven-jarsigner-1.3.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-toolchain\2.1.0\maven-toolchain-2.1.0.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-archiver\2.4.1\plexus-archiver-2.4.1.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-io\2.0.7\plexus-io-2.0.7.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar, C:\Users\user\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar, C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-impl\1.0-beta-6\webstart-pack200-impl-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api-1.6\1.4\keytool-api-1.6-1.4.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api\1.4\keytool-api-1.4.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar]
+[DEBUG]   (f) compileSourceRoots = [F:\workspace\Transportliste\TransportApp\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = F:\workspace\Transportliste\TransportApp\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = F:\workspace\Transportliste\TransportApp\target\test-classes
+[DEBUG]   (f) showDeprecation = true
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.6
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.6
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ TransportApp ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=63, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.12.4:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.12.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: junit:junit:jar:3.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.0.9
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test' with basic configurator -->
+[DEBUG]   (s) basedir = F:\workspace\Transportliste\TransportApp
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = F:\workspace\Transportliste\TransportApp\target\classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =        id: local
+      url: file:///C:/Users/user/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.12.4:, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.12.4:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.8:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {antlr:antlr=antlr:antlr:jar:2.7.6:compile, commons-collections:commons-collections=commons-collections:commons-collections:jar:3.1:compile, dom4j:dom4j=dom4j:dom4j:jar:1.6.1:compile, xml-apis:xml-apis=xml-apis:xml-apis:jar:1.0.b2:compile, javassist:javassist=javassist:javassist:jar:3.9.0.GA:compile, org.slf4j:slf4j-log4j12=org.slf4j:slf4j-log4j12:jar:1.7.5:compile, log4j:log4j=log4j:log4j:jar:1.2.17:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.7.5:compile, mysql:mysql-connector-java=mysql:mysql-connector-java:jar:5.1.22:compile, net.sourceforge.jdatepicker:jdatepicker=net.sourceforge.jdatepicker:jdatepicker:jar:1.3.2:compile, ru.atomation.jbrowser:jbrowser=ru.atomation.jbrowser:jbrowser:jar:1.9:compile, org.mozilla:MozillaInterfaces=org.mozilla:MozillaInterfaces:jar:1.9:compile, org.mozilla:MozillaGlue=org.mozilla:MozillaGlue:jar:1.9:compile, org.mozilla:mozdom4java=org.mozilla:mozdom4java:jar:stable:compile, commons-logging:commons-logging=commons-logging:commons-logging:jar:1.1.1:compile, net.java.dev.jna:jna=net.java.dev.jna:jna:jar:3.2.2:compile, commons-io:commons-io=commons-io:commons-io:jar:1.3.2:compile, org.apache.commons:commons-compress=org.apache.commons:commons-compress:jar:1.0:compile, org.hibernate:hibernate-core=org.hibernate:hibernate-core:jar:3.3.2.GA:compile, javax.transaction:jta=javax.transaction:jta:jar:1.1:compile, org.codehaus.mojo:webstart-maven-plugin=org.codehaus.mojo:webstart-maven-plugin:maven-plugin:1.0-beta-6:compile, org.codehaus.mojo:webstart-pack200-api=org.codehaus.mojo:webstart-pack200-api:jar:1.0-beta-6:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.0.10:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.0.10:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.0.10:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.0.10:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.0.10:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.0.10:compile, org.codehaus.plexus:plexus-interpolation=org.codehaus.plexus:plexus-interpolation:jar:1.1:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, junit:junit=junit:junit:pom.lastUpdated:4.0:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.0.10:compile, org.apache.maven.wagon:wagon-file=org.apache.maven.wagon:wagon-file:jar:1.0-beta-2:runtime, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.10:compile, org.apache.maven.wagon:wagon-webdav=org.apache.maven.wagon:wagon-webdav:jar:1.0-beta-2:runtime, slide:slide-webdavlib=slide:slide-webdavlib:jar:2.1:runtime, commons-httpclient:commons-httpclient=commons-httpclient:commons-httpclient:jar:2.0.2:runtime, jdom:jdom=jdom:jdom:jar:1.0:runtime, de.zeigermann.xml:xml-im-exporter=de.zeigermann.xml:xml-im-exporter:jar:1.1:runtime, org.apache.maven.wagon:wagon-http-lightweight=org.apache.maven.wagon:wagon-http-lightweight:jar:1.0-beta-2:runtime, org.apache.maven.wagon:wagon-http-shared=org.apache.maven.wagon:wagon-http-shared:jar:1.0-beta-2:runtime, jtidy:jtidy=jtidy:jtidy:jar:4aug2000r7-dev:runtime, org.apache.maven.wagon:wagon-provider-api=org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.0.10:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.0.10:compile, commons-cli:commons-cli=commons-cli:commons-cli:jar:1.0:compile, org.apache.maven.wagon:wagon-ssh-external=org.apache.maven.wagon:wagon-ssh-external:jar:1.0-beta-2:runtime, org.apache.maven.wagon:wagon-ssh-common=org.apache.maven.wagon:wagon-ssh-common:jar:1.0-beta-2:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.0.10:compile, org.codehaus.plexus:plexus-interactivity-api=org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.0.10:compile, org.apache.maven.wagon:wagon-ssh=org.apache.maven.wagon:wagon-ssh:jar:1.0-beta-2:compile, com.jcraft:jsch=com.jcraft:jsch:jar:0.1.27:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.0.10:compile, org.codehaus.plexus:plexus-component-annotations=org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.10:compile, org.apache.maven.doxia:doxia-sink-api=org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-11:compile, org.apache.maven.reporting:maven-reporting-impl=org.apache.maven.reporting:maven-reporting-impl:jar:2.0.4:compile, commons-validator:commons-validator=commons-validator:commons-validator:jar:1.2.0:compile, commons-beanutils:commons-beanutils=commons-beanutils:commons-beanutils:jar:1.7.0:compile, commons-digester:commons-digester=commons-digester:commons-digester:jar:1.6:compile, org.apache.maven.doxia:doxia-core=org.apache.maven.doxia:doxia-core:jar:1.0-alpha-7:compile, oro:oro=oro:oro:jar:2.0.7:compile, org.apache.maven.doxia:doxia-site-renderer=org.apache.maven.doxia:doxia-site-renderer:jar:1.0-alpha-7:compile, org.codehaus.plexus:plexus-i18n=org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6:compile, org.codehaus.plexus:plexus-velocity=org.codehaus.plexus:plexus-velocity:jar:1.1.2:compile, commons-logging:commons-logging-api=commons-logging:commons-logging-api:jar:1.0.4:compile, velocity:velocity=velocity:velocity:jar:1.4:compile, velocity:velocity-dep=velocity:velocity-dep:jar:1.4:runtime, org.apache.maven.doxia:doxia-decoration-model=org.apache.maven.doxia:doxia-decoration-model:jar:1.0-alpha-7:compile, org.apache.maven.shared:maven-shared-utils=org.apache.maven.shared:maven-shared-utils:jar:0.5:compile, com.google.code.findbugs:jsr305=com.google.code.findbugs:jsr305:jar:2.0.1:compile, org.apache.maven.shared:maven-jarsigner=org.apache.maven.shared:maven-jarsigner:jar:1.3.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.1.0:compile, org.codehaus.plexus:plexus-archiver=org.codehaus.plexus:plexus-archiver:jar:2.4.1:compile, org.codehaus.plexus:plexus-io=org.codehaus.plexus:plexus-io:jar:2.0.7:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.10:compile, org.apache.velocity:velocity=org.apache.velocity:velocity:jar:1.7:compile, commons-lang:commons-lang=commons-lang:commons-lang:jar:2.6:compile, org.codehaus.mojo:webstart-pack200-impl=org.codehaus.mojo:webstart-pack200-impl:jar:1.0-beta-6:runtime, org.codehaus.mojo:keytool-api-1.6=org.codehaus.mojo:keytool-api-1.6:jar:1.4:compile, org.codehaus.mojo:keytool-api=org.codehaus.mojo:keytool-api:jar:1.4:compile, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:3.0:compile, org.sonatype.sisu:sisu-inject-plexus=org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile, org.codehaus.plexus:plexus-classworlds=org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile, org.sonatype.sisu:sisu-inject-bean=org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile, org.sonatype.sisu:sisu-guice=org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [       id: central
+      url: http://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = F:\workspace\Transportliste\TransportApp\target\surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = F:\workspace\Transportliste\TransportApp\target\test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = F:\workspace\Transportliste\TransportApp\src\test\java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = F:\workspace\Transportliste\TransportApp
+[DEBUG]   (s) project = MavenProject: TransportApp:TransportApp:0.0.1-SNAPSHOT @ F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG] -- end configuration --
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ TransportApp ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=74, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=70, DefaultDependencyCollector.collectTime=31, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:runtime
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]             org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]          org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-jar-plugin:2.4:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-jar-plugin:2.4:jar' with basic configurator -->
+[DEBUG]   (f) classesDirectory = F:\workspace\Transportliste\TransportApp\target\classes
+[DEBUG]   (f) defaultManifestFile = F:\workspace\Transportliste\TransportApp\target\classes\META-INF\MANIFEST.MF
+[DEBUG]   (f) finalName = TransportApp-0.0.1-SNAPSHOT
+[DEBUG]   (f) forceCreation = false
+[DEBUG]   (f) outputDirectory = F:\workspace\Transportliste\TransportApp\target
+[DEBUG]   (f) project = MavenProject: TransportApp:TransportApp:0.0.1-SNAPSHOT @ F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@8ca8ac
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[DEBUG] isUp2date: true
+[DEBUG] Archive F:\workspace\Transportliste\TransportApp\target\TransportApp-0.0.1-SNAPSHOT.jar is uptodate.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ TransportApp ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.4:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.4:install' with basic configurator -->
+[DEBUG]   (f) artifact = TransportApp:TransportApp:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =        id: local
+      url: file:///C:/Users/user/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) packaging = jar
+[DEBUG]   (f) pomFile = F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] Installing F:\workspace\Transportliste\TransportApp\target\TransportApp-0.0.1-SNAPSHOT.jar to C:\Users\user\.m2\repository\TransportApp\TransportApp\0.0.1-SNAPSHOT\TransportApp-0.0.1-SNAPSHOT.jar
+[DEBUG] Skipped re-installing F:\workspace\Transportliste\TransportApp\target\TransportApp-0.0.1-SNAPSHOT.jar to C:\Users\user\.m2\repository\TransportApp\TransportApp\0.0.1-SNAPSHOT\TransportApp-0.0.1-SNAPSHOT.jar, seems unchanged
+[DEBUG] Writing tracking file C:\Users\user\.m2\repository\TransportApp\TransportApp\0.0.1-SNAPSHOT\_remote.repositories
+[INFO] Installing F:\workspace\Transportliste\TransportApp\pom.xml to C:\Users\user\.m2\repository\TransportApp\TransportApp\0.0.1-SNAPSHOT\TransportApp-0.0.1-SNAPSHOT.pom
+[DEBUG] Writing tracking file C:\Users\user\.m2\repository\TransportApp\TransportApp\0.0.1-SNAPSHOT\_remote.repositories
+[DEBUG] Installing TransportApp:TransportApp:0.0.1-SNAPSHOT/maven-metadata.xml to C:\Users\user\.m2\repository\TransportApp\TransportApp\0.0.1-SNAPSHOT\maven-metadata-local.xml
+[DEBUG] Installing TransportApp:TransportApp/maven-metadata.xml to C:\Users\user\.m2\repository\TransportApp\TransportApp\maven-metadata-local.xml
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=12, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16, ConflictResolver.conflictItemCount=11, DefaultDependencyCollector.collectTime=0, DefaultDependencyCollector.transformTime=16}
+[DEBUG] Transportliste:Transportliste:pom:1.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-component-annotations:jar:1.5.4:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=12, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=11, DefaultDependencyCollector.collectTime=0, DefaultDependencyCollector.transformTime=0}
+[DEBUG] TransportWeb:TransportWeb:war:1.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-component-annotations:jar:1.5.4:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[INFO] 
+[INFO] --- webstart-maven-plugin:1.0-beta-6:jnlp-inline (default) @ TransportApp ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=251, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=56, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=125, DefaultDependencyCollector.collectTime=31, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.codehaus.mojo:webstart-maven-plugin:jar:1.0-beta-6:
+[DEBUG]    org.codehaus.mojo:webstart-pack200-api:jar:1.0-beta-6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.10:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.10:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.10:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.10:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9:compile
+[DEBUG]          junit:junit:jar:4.9:test
+[DEBUG]             org.hamcrest:hamcrest-core:jar:1.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.10:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.10:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.10:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.10:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.10:compile
+[DEBUG]    org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:2.0.10:compile
+[DEBUG]       org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-11:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.0.4:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.2.0:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.6:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.0.4:compile
+[DEBUG]          xml-apis:xml-apis:jar:1.0.b2:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.0-alpha-7:compile
+[DEBUG]       oro:oro:jar:2.0.7:compile
+[DEBUG]       org.apache.maven.doxia:doxia-site-renderer:jar:1.0-alpha-7:compile
+[DEBUG]          org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6:compile
+[DEBUG]          org.codehaus.plexus:plexus-velocity:jar:1.1.2:compile
+[DEBUG]             commons-logging:commons-logging-api:jar:1.0.4:compile
+[DEBUG]             velocity:velocity:jar:1.4:compile
+[DEBUG]                velocity:velocity-dep:jar:1.4:runtime
+[DEBUG]          org.apache.maven.doxia:doxia-decoration-model:jar:1.0-alpha-7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.5:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-jarsigner:jar:1.3.1:compile
+[DEBUG]       org.apache.maven:maven-toolchain:jar:2.1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.4.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.7:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.5:compile
+[DEBUG]          org.tukaani:xz:jar:1.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.10:compile
+[DEBUG]    org.apache.velocity:velocity:jar:1.7:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]    org.codehaus.mojo:webstart-pack200-impl:jar:1.0-beta-6:runtime
+[DEBUG]    org.codehaus.mojo:keytool-api-1.6:jar:1.4:compile
+[DEBUG]       org.codehaus.mojo:keytool-api:jar:1.4:compile
+[DEBUG] Created new class realm plugin>org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6
+[DEBUG] Importing foreign packages into class realm plugin>org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6
+[DEBUG]   Included: org.codehaus.mojo:webstart-maven-plugin:jar:1.0-beta-6
+[DEBUG]   Included: org.codehaus.mojo:webstart-pack200-api:jar:1.0-beta-6
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.1
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.10
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-11
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.0.4
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.2.0
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.7.0
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.6
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.0.4
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.0.b2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.0-alpha-7
+[DEBUG]   Included: oro:oro:jar:2.0.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.0-alpha-7
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.1.2
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.0.4
+[DEBUG]   Included: velocity:velocity:jar:1.4
+[DEBUG]   Included: velocity:velocity-dep:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.0-alpha-7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.5
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-jarsigner:jar:1.3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.7
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.5
+[DEBUG]   Included: org.tukaani:xz:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.10
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.7
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.6
+[DEBUG]   Included: org.codehaus.mojo:webstart-pack200-impl:jar:1.0-beta-6
+[DEBUG]   Included: org.codehaus.mojo:keytool-api-1.6:jar:1.4
+[DEBUG]   Included: org.codehaus.mojo:keytool-api:jar:1.4
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.10
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9
+[DEBUG]   Excluded: junit:junit:jar:4.9
+[DEBUG]   Excluded: org.hamcrest:hamcrest-core:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.10
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.10
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.1.0
+[DEBUG] Configuring mojo org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6:jnlp-inline from plugin realm ClassRealm[plugin>org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6, parent: sun.misc.Launcher$AppClassLoader@35ce36]
+[DEBUG] Configuring mojo 'org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6:jnlp-inline' with basic configurator -->
+[DEBUG]   (f) archive = F:\workspace\Transportliste\TransportApp\target\TransportApp-0.0.1-SNAPSHOT.zip
+[DEBUG]   (f) attachArchive = true
+[DEBUG]   (f) basedir = F:\workspace\Transportliste\TransportApp
+[DEBUG]   (f) canUnsign = true
+[DEBUG]   (f) codebase = ${project.url}/jnlp
+[DEBUG]   (f) compileClassPath = [F:\workspace\Transportliste\TransportApp\target\classes, C:\Users\user\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar, C:\Users\user\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar, C:\Users\user\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar, C:\Users\user\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar, C:\Users\user\.m2\repository\javassist\javassist\3.9.0.GA\javassist-3.9.0.GA.jar, C:\Users\user\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar, C:\Users\user\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar, C:\Users\user\.m2\repository\mysql\mysql-connector-java\5.1.22\mysql-connector-java-5.1.22.jar, C:\Users\user\.m2\repository\net\sourceforge\jdatepicker\jdatepicker\1.3.2\jdatepicker-1.3.2.jar, C:\Users\user\.m2\repository\ru\atomation\jbrowser\jbrowser\1.9\jbrowser-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\MozillaInterfaces\1.9\MozillaInterfaces-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\MozillaGlue\1.9\MozillaGlue-1.9.jar, C:\Users\user\.m2\repository\org\mozilla\mozdom4java\stable\mozdom4java-stable.jar, C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar, C:\Users\user\.m2\repository\net\java\dev\jna\jna\3.2.2\jna-3.2.2.jar, C:\Users\user\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar, C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.0\commons-compress-1.0.jar, C:\Users\user\.m2\repository\org\hibernate\hibernate-core\3.3.2.GA\hibernate-core-3.3.2.GA.jar, C:\Users\user\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-maven-plugin\1.0-beta-6\webstart-maven-plugin-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-api\1.0-beta-6\webstart-pack200-api-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-model\2.0.10\maven-model-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-artifact\2.0.10\maven-artifact-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-project\2.0.10\maven-project-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-profile\2.0.10\maven-profile-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.10\maven-artifact-manager-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.10\maven-plugin-registry-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.1\plexus-interpolation-1.1.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar, C:\Users\user\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-core\2.0.10\maven-core-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.10\maven-plugin-parameter-documenter-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.10\maven-repository-metadata-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.10\maven-error-diagnostics-2.0.10.jar, C:\Users\user\.m2\repository\commons-cli\commons-cli\1.0\commons-cli-1.0.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-common\1.0-beta-2\wagon-ssh-common-1.0-beta-2.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.10\maven-plugin-descriptor-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.0-alpha-4\plexus-interactivity-api-1.0-alpha-4.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-monitor\2.0.10\maven-monitor-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh\1.0-beta-2\wagon-ssh-1.0-beta-2.jar, C:\Users\user\.m2\repository\com\jcraft\jsch\0.1.27\jsch-0.1.27.jar, C:\Users\user\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-settings\2.0.10\maven-settings-2.0.10.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar, C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.10\maven-reporting-api-2.0.10.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-11\doxia-sink-api-1.0-alpha-11.jar, C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4\maven-reporting-impl-2.0.4.jar, C:\Users\user\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar, C:\Users\user\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar, C:\Users\user\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-core\1.0-alpha-7\doxia-core-1.0-alpha-7.jar, C:\Users\user\.m2\repository\oro\oro\2.0.7\oro-2.0.7.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0-alpha-7\doxia-site-renderer-1.0-alpha-7.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-6\plexus-i18n-1.0-beta-6.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.2\plexus-velocity-1.1.2.jar, C:\Users\user\.m2\repository\commons-logging\commons-logging-api\1.0.4\commons-logging-api-1.0.4.jar, C:\Users\user\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar, C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0-alpha-7\doxia-decoration-model-1.0-alpha-7.jar, C:\Users\user\.m2\repository\org\apache\maven\shared\maven-shared-utils\0.5\maven-shared-utils-0.5.jar, C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar, C:\Users\user\.m2\repository\org\apache\maven\shared\maven-jarsigner\1.3.1\maven-jarsigner-1.3.1.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-toolchain\2.1.0\maven-toolchain-2.1.0.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-archiver\2.4.1\plexus-archiver-2.4.1.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-io\2.0.7\plexus-io-2.0.7.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar, C:\Users\user\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar, C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api-1.6\1.4\keytool-api-1.6-1.4.jar, C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api\1.4\keytool-api-1.4.jar, C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar, C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar, C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar]
+[DEBUG]   (f) filenameMapping = simple
+[DEBUG]   (f) gzip = false
+[DEBUG]   (s) outputFile = launch.jnlp
+[DEBUG]   (s) mainClass = Start
+[DEBUG]   (f) jnlp = org.codehaus.mojo.webstart.JnlpConfig@18b0b4a
+[DEBUG]   (f) localRepository =        id: local
+      url: file:///C:/Users/user/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) makeArchive = true
+[DEBUG]   (f) outputJarVersions = false
+[DEBUG]   (f) remoteRepositories = [       id: atomation-repository
+      url: http://atomation-repository.googlecode.com/svn/trunk
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+,        id: central
+      url: http://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+]
+[DEBUG]   (s) keystore = /workspace/transportliste/transportliste.jks
+[DEBUG]   (s) keypass = akrd1234
+[DEBUG]   (s) storepass = akrd1234
+[DEBUG]   (s) storetype = jks
+[DEBUG]   (s) alias = servercert
+[DEBUG]   (s) verify = true
+[DEBUG]   (f) sign = org.codehaus.mojo.webstart.sign.SignConfig@183ee9a
+[DEBUG]   (f) templateDirectory = F:\workspace\Transportliste\TransportApp\src\main\jnlp
+[DEBUG]   (f) unsignAlreadySignedJars = false
+[DEBUG]   (f) verbose = true
+[DEBUG]   (f) workDirectory = F:\workspace\Transportliste\TransportApp\target\jnlp
+[DEBUG]   (f) project = MavenProject: TransportApp:TransportApp:0.0.1-SNAPSHOT @ F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG] -- end configuration --
+[DEBUG] basedir F:\workspace\Transportliste\TransportApp
+[DEBUG] gzip false
+[DEBUG] pack200 false
+[DEBUG] project MavenProject: TransportApp:TransportApp:0.0.1-SNAPSHOT @ F:\workspace\Transportliste\TransportApp\pom.xml
+[DEBUG] verbose true
+[DEBUG] using work directory F:\workspace\Transportliste\TransportApp\target\jnlp
+[DEBUG] using library directory F:\workspace\Transportliste\TransportApp\target\jnlp
+[INFO] Directory does not exist F:\workspace\Transportliste\TransportApp\src\main\jnlp\resources
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\TransportApp-0.0.1-SNAPSHOT.jar with F:\workspace\Transportliste\TransportApp\target\TransportApp-0.0.1-SNAPSHOT.jar.
+[DEBUG] Checking if the loaded class contains a main method.
+[DEBUG] Found main jar. Artifact TransportApp:TransportApp:jar:0.0.1-SNAPSHOT contains the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\antlr-2.7.6.jar with C:\Users\user\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar.
+[DEBUG] artifact antlr:antlr:jar:2.7.6:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-collections-3.1.jar with C:\Users\user\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar.
+[DEBUG] artifact commons-collections:commons-collections:jar:3.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\dom4j-1.6.1.jar with C:\Users\user\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar.
+[DEBUG] artifact dom4j:dom4j:jar:1.6.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\xml-apis-1.0.b2.jar with C:\Users\user\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar.
+[DEBUG] artifact xml-apis:xml-apis:jar:1.0.b2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\javassist-3.9.0.GA.jar with C:\Users\user\.m2\repository\javassist\javassist\3.9.0.GA\javassist-3.9.0.GA.jar.
+[DEBUG] artifact javassist:javassist:jar:3.9.0.GA:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\slf4j-log4j12-1.7.5.jar with C:\Users\user\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar.
+[DEBUG] artifact org.slf4j:slf4j-log4j12:jar:1.7.5:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\log4j-1.2.17.jar with C:\Users\user\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar.
+[DEBUG] artifact log4j:log4j:jar:1.2.17:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\slf4j-api-1.7.5.jar with C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar.
+[DEBUG] artifact org.slf4j:slf4j-api:jar:1.7.5:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\mysql-connector-java-5.1.22.jar with C:\Users\user\.m2\repository\mysql\mysql-connector-java\5.1.22\mysql-connector-java-5.1.22.jar.
+[DEBUG] artifact mysql:mysql-connector-java:jar:5.1.22:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jdatepicker-1.3.2.jar with C:\Users\user\.m2\repository\net\sourceforge\jdatepicker\jdatepicker\1.3.2\jdatepicker-1.3.2.jar.
+[DEBUG] artifact net.sourceforge.jdatepicker:jdatepicker:jar:1.3.2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jbrowser-1.9.jar with C:\Users\user\.m2\repository\ru\atomation\jbrowser\jbrowser\1.9\jbrowser-1.9.jar.
+[DEBUG] artifact ru.atomation.jbrowser:jbrowser:jar:1.9:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\MozillaInterfaces-1.9.jar with C:\Users\user\.m2\repository\org\mozilla\MozillaInterfaces\1.9\MozillaInterfaces-1.9.jar.
+[DEBUG] artifact org.mozilla:MozillaInterfaces:jar:1.9:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\MozillaGlue-1.9.jar with C:\Users\user\.m2\repository\org\mozilla\MozillaGlue\1.9\MozillaGlue-1.9.jar.
+[DEBUG] artifact org.mozilla:MozillaGlue:jar:1.9:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\mozdom4java-stable.jar with C:\Users\user\.m2\repository\org\mozilla\mozdom4java\stable\mozdom4java-stable.jar.
+[DEBUG] artifact org.mozilla:mozdom4java:jar:stable:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-logging-1.1.1.jar with C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar.
+[DEBUG] artifact commons-logging:commons-logging:jar:1.1.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jna-3.2.2.jar with C:\Users\user\.m2\repository\net\java\dev\jna\jna\3.2.2\jna-3.2.2.jar.
+[DEBUG] artifact net.java.dev.jna:jna:jar:3.2.2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-io-1.3.2.jar with C:\Users\user\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar.
+[DEBUG] artifact commons-io:commons-io:jar:1.3.2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-compress-1.0.jar with C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.0\commons-compress-1.0.jar.
+[DEBUG] artifact org.apache.commons:commons-compress:jar:1.0:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\hibernate-core-3.3.2.GA.jar with C:\Users\user\.m2\repository\org\hibernate\hibernate-core\3.3.2.GA\hibernate-core-3.3.2.GA.jar.
+[DEBUG] artifact org.hibernate:hibernate-core:jar:3.3.2.GA:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jta-1.1.jar with C:\Users\user\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar.
+[DEBUG] artifact javax.transaction:jta:jar:1.1:compile doesn't contain the main class: Start
+[INFO] Skipping artifact of type maven-plugin for jnlp
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\webstart-pack200-api-1.0-beta-6.jar with C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-api\1.0-beta-6\webstart-pack200-api-1.0-beta-6.jar.
+[DEBUG] artifact org.codehaus.mojo:webstart-pack200-api:jar:1.0-beta-6:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-model-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-model\2.0.10\maven-model-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-model:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-artifact-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-artifact\2.0.10\maven-artifact-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-artifact:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-project-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-project\2.0.10\maven-project-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-project:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-profile-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-profile\2.0.10\maven-profile-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-profile:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-artifact-manager-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.10\maven-artifact-manager-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-artifact-manager:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-plugin-registry-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.10\maven-plugin-registry-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-plugin-registry:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-interpolation-1.1.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.1\plexus-interpolation-1.1.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-interpolation:jar:1.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-container-default-1.0-alpha-9-stable-1.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\junit-3.8.1.jar with C:\Users\user\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar.
+[DEBUG] artifact junit:junit:jar:3.8.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-core-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-core\2.0.10\maven-core-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-core:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-file-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-file\1.0-beta-2\wagon-file-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-file:jar:1.0-beta-2:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-plugin-parameter-documenter-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-parameter-documenter\2.0.10\maven-plugin-parameter-documenter-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-webdav-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-webdav\1.0-beta-2\wagon-webdav-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-webdav:jar:1.0-beta-2:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\slide-webdavlib-2.1.jar with C:\Users\user\.m2\repository\slide\slide-webdavlib\2.1\slide-webdavlib-2.1.jar.
+[DEBUG] artifact slide:slide-webdavlib:jar:2.1:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-httpclient-2.0.2.jar with C:\Users\user\.m2\repository\commons-httpclient\commons-httpclient\2.0.2\commons-httpclient-2.0.2.jar.
+[DEBUG] artifact commons-httpclient:commons-httpclient:jar:2.0.2:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jdom-1.0.jar with C:\Users\user\.m2\repository\jdom\jdom\1.0\jdom-1.0.jar.
+[DEBUG] artifact jdom:jdom:jar:1.0:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\xml-im-exporter-1.1.jar with C:\Users\user\.m2\repository\de\zeigermann\xml\xml-im-exporter\1.1\xml-im-exporter-1.1.jar.
+[DEBUG] artifact de.zeigermann.xml:xml-im-exporter:jar:1.1:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-http-lightweight-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-http-lightweight\1.0-beta-2\wagon-http-lightweight-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-http-lightweight:jar:1.0-beta-2:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-http-shared-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-http-shared\1.0-beta-2\wagon-http-shared-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-http-shared:jar:1.0-beta-2:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jtidy-4aug2000r7-dev.jar with C:\Users\user\.m2\repository\jtidy\jtidy\4aug2000r7-dev\jtidy-4aug2000r7-dev.jar.
+[DEBUG] artifact jtidy:jtidy:jar:4aug2000r7-dev:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-provider-api-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-2\wagon-provider-api-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-repository-metadata-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.10\maven-repository-metadata-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-repository-metadata:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-error-diagnostics-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-error-diagnostics\2.0.10\maven-error-diagnostics-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-error-diagnostics:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-cli-1.0.jar with C:\Users\user\.m2\repository\commons-cli\commons-cli\1.0\commons-cli-1.0.jar.
+[DEBUG] artifact commons-cli:commons-cli:jar:1.0:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-ssh-external-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-external\1.0-beta-2\wagon-ssh-external-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-ssh-external:jar:1.0-beta-2:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-ssh-common-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh-common\1.0-beta-2\wagon-ssh-common-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-ssh-common:jar:1.0-beta-2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-plugin-descriptor-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.0.10\maven-plugin-descriptor-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-plugin-descriptor:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-interactivity-api-1.0-alpha-4.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.0-alpha-4\plexus-interactivity-api-1.0-alpha-4.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-monitor-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-monitor\2.0.10\maven-monitor-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-monitor:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\wagon-ssh-1.0-beta-2.jar with C:\Users\user\.m2\repository\org\apache\maven\wagon\wagon-ssh\1.0-beta-2\wagon-ssh-1.0-beta-2.jar.
+[DEBUG] artifact org.apache.maven.wagon:wagon-ssh:jar:1.0-beta-2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jsch-0.1.27.jar with C:\Users\user\.m2\repository\com\jcraft\jsch\0.1.27\jsch-0.1.27.jar.
+[DEBUG] artifact com.jcraft:jsch:jar:0.1.27:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\classworlds-1.1.jar with C:\Users\user\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar.
+[DEBUG] artifact classworlds:classworlds:jar:1.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-settings-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-settings\2.0.10\maven-settings-2.0.10.jar.
+[DEBUG] artifact org.apache.maven:maven-settings:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-component-annotations-1.5.5.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-reporting-api-2.0.10.jar with C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.10\maven-reporting-api-2.0.10.jar.
+[DEBUG] artifact org.apache.maven.reporting:maven-reporting-api:jar:2.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\doxia-sink-api-1.0-alpha-11.jar with C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-11\doxia-sink-api-1.0-alpha-11.jar.
+[DEBUG] artifact org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-11:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-reporting-impl-2.0.4.jar with C:\Users\user\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4\maven-reporting-impl-2.0.4.jar.
+[DEBUG] artifact org.apache.maven.reporting:maven-reporting-impl:jar:2.0.4:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-validator-1.2.0.jar with C:\Users\user\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar.
+[DEBUG] artifact commons-validator:commons-validator:jar:1.2.0:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-beanutils-1.7.0.jar with C:\Users\user\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar.
+[DEBUG] artifact commons-beanutils:commons-beanutils:jar:1.7.0:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-digester-1.6.jar with C:\Users\user\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar.
+[DEBUG] artifact commons-digester:commons-digester:jar:1.6:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\doxia-core-1.0-alpha-7.jar with C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-core\1.0-alpha-7\doxia-core-1.0-alpha-7.jar.
+[DEBUG] artifact org.apache.maven.doxia:doxia-core:jar:1.0-alpha-7:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\oro-2.0.7.jar with C:\Users\user\.m2\repository\oro\oro\2.0.7\oro-2.0.7.jar.
+[DEBUG] artifact oro:oro:jar:2.0.7:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\doxia-site-renderer-1.0-alpha-7.jar with C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0-alpha-7\doxia-site-renderer-1.0-alpha-7.jar.
+[DEBUG] artifact org.apache.maven.doxia:doxia-site-renderer:jar:1.0-alpha-7:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-i18n-1.0-beta-6.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-6\plexus-i18n-1.0-beta-6.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-velocity-1.1.2.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.2\plexus-velocity-1.1.2.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-velocity:jar:1.1.2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-logging-api-1.0.4.jar with C:\Users\user\.m2\repository\commons-logging\commons-logging-api\1.0.4\commons-logging-api-1.0.4.jar.
+[DEBUG] artifact commons-logging:commons-logging-api:jar:1.0.4:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\velocity-1.4.jar with C:\Users\user\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar.
+[DEBUG] artifact velocity:velocity:jar:1.4:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\velocity-dep-1.4.jar with C:\Users\user\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar.
+[DEBUG] artifact velocity:velocity-dep:jar:1.4:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\doxia-decoration-model-1.0-alpha-7.jar with C:\Users\user\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0-alpha-7\doxia-decoration-model-1.0-alpha-7.jar.
+[DEBUG] artifact org.apache.maven.doxia:doxia-decoration-model:jar:1.0-alpha-7:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-shared-utils-0.5.jar with C:\Users\user\.m2\repository\org\apache\maven\shared\maven-shared-utils\0.5\maven-shared-utils-0.5.jar.
+[DEBUG] artifact org.apache.maven.shared:maven-shared-utils:jar:0.5:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\jsr305-2.0.1.jar with C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar.
+[DEBUG] artifact com.google.code.findbugs:jsr305:jar:2.0.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-jarsigner-1.3.1.jar with C:\Users\user\.m2\repository\org\apache\maven\shared\maven-jarsigner\1.3.1\maven-jarsigner-1.3.1.jar.
+[DEBUG] artifact org.apache.maven.shared:maven-jarsigner:jar:1.3.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-toolchain-2.1.0.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-toolchain\2.1.0\maven-toolchain-2.1.0.jar.
+[DEBUG] artifact org.apache.maven:maven-toolchain:jar:2.1.0:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-archiver-2.4.1.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-archiver\2.4.1\plexus-archiver-2.4.1.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-archiver:jar:2.4.1:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-io-2.0.7.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-io\2.0.7\plexus-io-2.0.7.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-io:jar:2.0.7:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-utils-3.0.10.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-utils:jar:3.0.10:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\velocity-1.7.jar with C:\Users\user\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar.
+[DEBUG] artifact org.apache.velocity:velocity:jar:1.7:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\commons-lang-2.6.jar with C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar.
+[DEBUG] artifact commons-lang:commons-lang:jar:2.6:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\webstart-pack200-impl-1.0-beta-6.jar with C:\Users\user\.m2\repository\org\codehaus\mojo\webstart-pack200-impl\1.0-beta-6\webstart-pack200-impl-1.0-beta-6.jar.
+[DEBUG] artifact org.codehaus.mojo:webstart-pack200-impl:jar:1.0-beta-6:runtime doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\keytool-api-1.6-1.4.jar with C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api-1.6\1.4\keytool-api-1.6-1.4.jar.
+[DEBUG] artifact org.codehaus.mojo:keytool-api-1.6:jar:1.4:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\keytool-api-1.4.jar with C:\Users\user\.m2\repository\org\codehaus\mojo\keytool-api\1.4\keytool-api-1.4.jar.
+[DEBUG] artifact org.codehaus.mojo:keytool-api:jar:1.4:compile doesn't contain the main class: Start
+[INFO] Skipping artifact of type pom.lastUpdated for jnlp
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\maven-plugin-api-3.0.jar with C:\Users\user\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar.
+[DEBUG] artifact org.apache.maven:maven-plugin-api:jar:3.0:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\sisu-inject-plexus-1.4.2.jar with C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar.
+[DEBUG] artifact org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\plexus-classworlds-2.2.3.jar with C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar.
+[DEBUG] artifact org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\sisu-inject-bean-1.4.2.jar with C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar.
+[DEBUG] artifact org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile doesn't contain the main class: Start
+[DEBUG] Source file hasn't changed. Do not reprocess F:\workspace\Transportliste\TransportApp\target\jnlp\sisu-guice-noaop-2.1.7.jar with C:\Users\user\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar.
+[DEBUG] artifact org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile doesn't contain the main class: Start
+[DEBUG] Some dependencies may be skipped. Here's the list of the artifacts that should be signed/packed:  []
+[INFO] -- Sign jars
+[DEBUG] signJars in F:\workspace\Transportliste\TransportApp\target\jnlp found 16 jar(s) to sign
+[INFO] Sign TransportApp-0.0.1-SNAPSHOT.jar
+[INFO] cmd.exe /X /C "c:\programme\java\jdk1.6.0_41\jre\..\bin\jarsigner.exe -verbose -keystore F:\workspace\transportliste\transportliste.jks -storepass akrd1234 -keypass akrd1234 -storetype jks -signedjar F:\workspace\Transportliste\TransportApp\target\jnlp\TransportApp-0.0.1-SNAPSHOT.jar F:\workspace\Transportliste\TransportApp\target\jnlp\unprocessed_TransportApp-0.0.1-SNAPSHOT.jar servercert"
+[DEBUG] Executing: cmd.exe /X /C "c:\programme\java\jdk1.6.0_41\jre\..\bin\jarsigner.exe -verbose -keystore F:\workspace\transportliste\transportliste.jks -storepass akrd1234 -keypass akrd1234 -storetype jks -signedjar F:\workspace\Transportliste\TransportApp\target\jnlp\TransportApp-0.0.1-SNAPSHOT.jar F:\workspace\Transportliste\TransportApp\target\jnlp\unprocessed_TransportApp-0.0.1-SNAPSHOT.jar servercert"
+[INFO]  updating: META-INF/MANIFEST.MF
+[INFO]    adding: META-INF/SERVERCE.SF
+[INFO]    adding: META-INF/SERVERCE.RSA
+[INFO] jarsigner: unable to sign jar: java.util.zip.ZipException: duplicate entry: META-INF/maven/TransportApp/TransportApp/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Transportliste Project ............................ SUCCESS [  0.281 s]
+[INFO] Transportliste/App Project ........................ FAILURE [  2.433 s]
+[INFO] Transportliste/Web Project ........................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.823 s
+[INFO] Finished at: 2014-05-17T11:50:16+01:00
+[INFO] Final Memory: 8M/21M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6:jnlp-inline (default) on project TransportApp: Could not sign jar F:\workspace\Transportliste\TransportApp\target\jnlp\unprocessed_TransportApp-0.0.1-SNAPSHOT.jar, use -X to have detail of error -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.codehaus.mojo:webstart-maven-plugin:1.0-beta-6:jnlp-inline (default) on project TransportApp: Could not sign jar F:\workspace\Transportliste\TransportApp\target\jnlp\unprocessed_TransportApp-0.0.1-SNAPSHOT.jar, use -X to have detail of error
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:216)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Could not sign jar F:\workspace\Transportliste\TransportApp\target\jnlp\unprocessed_TransportApp-0.0.1-SNAPSHOT.jar, use -X to have detail of error
+	at org.codehaus.mojo.webstart.sign.DefaultSignTool.sign(DefaultSignTool.java:121)
+	at org.codehaus.mojo.webstart.AbstractBaseJnlpMojo.signJars(AbstractBaseJnlpMojo.java:900)
+	at org.codehaus.mojo.webstart.AbstractBaseJnlpMojo.signOrRenameJars(AbstractBaseJnlpMojo.java:706)
+	at org.codehaus.mojo.webstart.AbstractJnlpMojo.execute(AbstractJnlpMojo.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	... 19 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :TransportApp
