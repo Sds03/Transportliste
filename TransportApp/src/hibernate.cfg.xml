@@ -8,6 +8,7 @@
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.connection.password">root</property>
+  <property name="hbm2ddl.auto">create</property>
   <mapping class="stamm.Trip" resource="stamm/Trip.hbm.xml"/>
   <mapping resource="stamm/Taxi.hbm.xml"/>
   <mapping resource="stamm/Insurance.hbm.xml"/>
