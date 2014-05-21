@@ -99,7 +99,7 @@ public class DAOTrip {
 		Query query = session
 				//.createSQLQuery("select OPDatum, PATIENT.ID, PATIENT.PATNR, LName, FName, Street, City, PATIENT.Telefon from FAHRDIENST.TRIP JOIN  FAHRDIENST.Patient On TRIP.PATNR=PATIENT.PATNR ")
 				.createSQLQuery(
-						"select * from FAHRDIENST.TRIP WHERE tour='"+tournr+"'")
+						"select * from fahrdienst.trip WHERE tour='"+tournr+"'")
 						.addEntity(Trip.class);
 		List<Trip> result = (List<Trip>) query.list();
 		return result;

@@ -17,7 +17,7 @@ public class DAODriver {
 		// TODO Auto-generated method stub
 		Session session = hu.getSessionFactory().openSession();
 		Transaction tx = session.beginTransaction();
-		Query query = session.createSQLQuery("select * from FAHRDIENST.DRIVER")
+		Query query = session.createSQLQuery("select * from fahrdienst.driver")
 				.addEntity(Driver.class);
 		List result = query.list();
 

@@ -17,7 +17,7 @@ public class DAOInsurance {
 		Session session = hu.getSessionFactory().openSession();
 		Transaction tx = session.beginTransaction();
 		Query query = session.createSQLQuery(
-				"select * from FAHRDIENST.INSURANCE")
+				"select * from fahrdienst.insurance")
 				.addEntity(Insurance.class);
 		List result = query.list();
 

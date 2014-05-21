@@ -24,7 +24,7 @@ public class DAOTour {
 		Transaction tx = session.beginTransaction();
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
 		Query query = session.createSQLQuery(
-				"select * from FAHRDIENST.TOUR where tourDate ='" + sf.format(date) + "'")
+				"select * from fahrdienst.tour where tourDate ='" + sf.format(date) + "'")
 				.addEntity(Tour.class);
 		
 		List result = query.list();

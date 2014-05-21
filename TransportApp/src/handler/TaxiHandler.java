@@ -30,7 +30,7 @@ import util.ETable;
 public class TaxiHandler extends JPanel implements ActionListener {
 
 	private JTextField tftaxiName = new JTextField();
-	private JCheckBox cbtaxi¡ctive = new JCheckBox();
+	private JCheckBox cbtaxiActive = new JCheckBox();
 	private JButton btntaxiAdd = new JButton("Add Taxi");
 	public JPopupMenu popUpGebDat = new JPopupMenu();
 	private JTextField tftaxiMaker = new JTextField();
@@ -104,7 +104,7 @@ public class TaxiHandler extends JPanel implements ActionListener {
 		btntaxiAdd.setBounds(205, 260, 124, 24);
 		JLabel lbltaxiActive = new JLabel("Active/not in Service");
 		lbltaxiActive.setBounds(5, 88, 120, 24);
-		cbtaxi¡ctive.setBounds(205, 88, 100, 24);
+		cbtaxiActive.setBounds(205, 88, 100, 24);
 		jcal.setComponentPopupMenu(popUpGebDat);
 		jcal.setBounds(205, 56, 150, 24);
 		panel.add(jcal, BorderLayout.WEST);
@@ -114,7 +114,7 @@ public class TaxiHandler extends JPanel implements ActionListener {
 		pnlMainTaxi.add(jcal);
 		pnlMainTaxi.add(tftaxiMaker);
 		pnlMainTaxi.add(btntaxiAdd);
-		pnlMainTaxi.add(cbtaxi¡ctive);
+		pnlMainTaxi.add(cbtaxiActive);
 		pnlMainTaxi.add(lbltaxiName);
 		pnlMainTaxi.add(lbltaxiMaker);
 		pnlMainTaxi.add(lbltaxiNextService);
